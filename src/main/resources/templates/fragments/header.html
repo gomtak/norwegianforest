@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="headerFragment">
 <div id="nav-section">
     <div class="bottom-header container-fluid mega-menus" id="mega-menus">
         <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
@@ -25,7 +28,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" data-animation="fadeIn">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Features </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="../index.html" data-title="Home"> Features </a>
                         <ul class="dropdown-menu  no-border-radius">
                             <li class="dropdown dropdown-right dropdown-parent">
                                 <a class="sub-marker" href="#">Header Styles <i class="icon-ios-more icn-right"></i></a>
@@ -131,7 +134,7 @@
                         </ul>
                     </li>
                     <li class="dropdown" data-animation="fadeIn">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Portfolio </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="../index.html" data-title="Home"> Portfolio </a>
                         <ul class="dropdown-menu no-border-radius">
                             <li class="dropdown dropdown-left dropdown-parent">
                                 <a class="sub-marker" href="#"> No Sidebar <i class="icon-ios-more icn-right"></i></a>
@@ -237,7 +240,7 @@
                         <a href="team.html"> Team </a>
                     </li>
                     <li class="dropdown right-dropdown" data-animation="fadeIn">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Blog </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="../index.html" data-title="Home"> Blog </a>
                         <ul class="dropdown-menu no-border-radius">
                             <li><a href="blog-one-col.html"> Blog One Column </a></li>
                             <li><a href="blog-two-col.html"> Blog Two Column </a></li>
@@ -307,3 +310,5 @@
         </nav>
     </div>
 </div>
+</th:block>
+</html>
