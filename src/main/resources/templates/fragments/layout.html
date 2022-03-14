@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">
+
+<th:block th:replace="fragments/config :: configFragment"/>
+
+<body class="white-overlay">
+
+    <div class="preloader" id="pageLoad">
+        <div class="holder">
+            <div class="coffee_cup"></div>
+        </div>
+    </div>
+
+    <!--Side panel-->
+    <th:block th:replace="fragments/nav :: navFragment"/>
+
+    <!-- main wrapper -->
+    <div id="wrapper" class="no-overflow-x">
+        <div class="page-wrapper">
+            <div th:replace="fragments/header :: headerFragment" />
+            <main>
+                <div layout:fragment="content" />
+            </main>
+            <th:block th:replace="fragments/footer :: footerFragment"/>
+        </div>
+    </div>
+
+    <!-- open/close -->
+    <div class="search-form-wrapper overlay overlay-hugeinc">
+        <button type="button" class="overlay-close"><span class="custom-icon-plus"></span></button>
+        <div class="search-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Enter Your Search">
+                    <button type="submit"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <th:block th:replace="fragments/script :: scriptFragment"/>
+</body>
+</html>
